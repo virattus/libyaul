@@ -9,6 +9,7 @@
 
 #include "internal.h"
 
+
 static inline void __always_inline
 _singles_reset(void)
 {
@@ -17,6 +18,7 @@ _singles_reset(void)
     sort->singles_top = sort->singles_pool + 1;
     sort->singles_index = 0;
 }
+
 
 static inline sort_single_t * __always_inline
 _singles_alloc(void)
@@ -31,6 +33,7 @@ _singles_alloc(void)
     return single;
 }
 
+
 void
 __sort_init(void)
 {
@@ -43,6 +46,7 @@ __sort_init(void)
     __sort_reset();
 }
 
+
 void
 __sort_reset(void)
 {
@@ -52,6 +56,7 @@ __sort_reset(void)
 
     sort->max_depth = 0;
 }
+
 
 void
 __sort_insert(uint32_t z)

@@ -7,4 +7,4 @@
 
 #include "state.h"
 
-state_t __state;
+//state_t __state;

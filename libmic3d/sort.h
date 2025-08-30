@@ -13,11 +13,15 @@
 
 #include "state.h"
 
-typedef struct sort_single {
+
+typedef struct sort_single 
+{
     int16_t next_single;
 } __aligned(2) sort_single_t;
 
-typedef struct sort {
+
+typedef struct sort 
+{
     sort_single_t *singles_pool;
     sort_list_t *sort_lists_pool;
 
@@ -25,6 +29,7 @@ typedef struct sort {
     uint32_t singles_index;
     uint32_t max_depth;
 } sort_t;
+
 
 void __sort_init(void);
 void __sort_reset(void);

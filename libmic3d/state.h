@@ -17,21 +17,20 @@ typedef struct sort sort_t;
 typedef struct tlist tlist_t;
 typedef struct light light_t;
 typedef struct gst gst_t;
-typedef struct mstack mstack_t;
 
 typedef struct perf perf_t;
 
-typedef struct {
+typedef struct 
+{
     workarea_mic3d_t *workarea;
     render_t *render;
     sort_t *sort;
     tlist_t *tlist;
-    mstack_t *mstack;
     light_t *light;
     gst_t *gst;
     perf_t *perf;
-} state_t;
+    
+} render_state_t;
 
-extern state_t __state;
 
 #endif /* _MIC3D_STATE_H_ */
